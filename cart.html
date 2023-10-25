@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products | Lo'ur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.jpg" width="30px" height="30px"></a>
+            <img src="images/menu2.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!--------------------------------cart item details------------------------------------------->    
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/coords/coord1.jpg">
+                        <div>
+                            <p>Dark Blue casual wear co-ord set.</p>
+                            <small>Price: Rs. 9999</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 9999.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs. 9999</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>12% of Total</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs. 9999</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="addtocart.js"></script>
+<!-------------------------------------Footer-------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our app</h3>
+                    <p>Download app for Android and iOS mobile phone.</p>   
+                    <div class="app-logo">
+                        <img src="images/app1.jpg">
+                        <img src="images/app2.jpg">
+                    </div>     
+                </div>
+                <div class="footer-col2">
+                    <img src="images/logo.png">
+                    <p>Wear and be graceful.</p>        
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>       
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>       
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023</p>
+        </div>
+    </div>
+
+    <!-------------------------------js for toggle menu------------------------------------>
+
+    <script>
+        var menuitems = document.getElementById("menuitems")
+
+        menuitems.style.maxHeight= "0px";
+        function menutoggle(){
+            if (menuitems.style.maxHeight=="0px")
+            {
+                menuitems.style.maxHeight= "200px";
+            }
+            else
+            {
+                menuitems.style.maxHeight= "0px";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!---const categories = [...new Set(product.map((item)=>
+    {return item}))]
+    let i=0;
+document.getElementById('root').innerHTML = categories.map(item)=>
+{
+    var{image, title, price} = items;
+    return{
+        '<div class= 'box'>
+            <div class=''
+    }
+}--->
